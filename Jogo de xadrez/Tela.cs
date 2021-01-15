@@ -82,7 +82,7 @@ namespace Jogo_de_xadrez
         {
 
             ConsoleColor fundoOriginal = Console.BackgroundColor;
-            ConsoleColor fundoAlterado = ConsoleColor.DarkGray; 
+            ConsoleColor fundoAlterado = ConsoleColor.DarkGray;
 
             for (int i = 0; i < tab.linhas; i++)
             {
@@ -91,13 +91,13 @@ namespace Jogo_de_xadrez
                 for (int j = 0; j < tab.colunas; j++)
                 {
 
-                    if (posicoesPossiveis[i,j])
+                    if (posicoesPossiveis[i, j])
                     {
-                        Console.BackgroundColor = fundoAlterado; 
+                        Console.BackgroundColor = fundoAlterado;
                     }
                     else
                     {
-                        Console.BackgroundColor = fundoOriginal; 
+                        Console.BackgroundColor = fundoOriginal;
                     }
 
                     imprimirPeca(tab.peca(i, j));
@@ -110,6 +110,7 @@ namespace Jogo_de_xadrez
             Console.WriteLine("  a b c d e f g h");
             Console.BackgroundColor = fundoOriginal;
         }
+
 
         public static PosicaoXadrez lerPosicaoXadrez()
         {
